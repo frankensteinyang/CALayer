@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF36CC471A768521008A745B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36CC461A768521008A745B /* main.m */; };
+		EF36CC4A1A768521008A745B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36CC491A768521008A745B /* AppDelegate.m */; };
+		EF36CC4D1A768521008A745B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36CC4C1A768521008A745B /* ViewController.m */; };
+		EF36CC501A768521008A745B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF36CC4E1A768521008A745B /* Main.storyboard */; };
+		EF36CC521A768521008A745B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF36CC511A768521008A745B /* Images.xcassets */; };
+		EF36CC551A768521008A745B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF36CC531A768521008A745B /* LaunchScreen.xib */; };
+		EF36CC611A768521008A745B /* CALayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36CC601A768521008A745B /* CALayerTests.m */; };
+		EF36CC6B1A7685CF008A745B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36CC6A1A7685CF008A745B /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF36CC5B1A768521008A745B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF36CC391A768521008A745B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF36CC401A768521008A745B;
+			remoteInfo = CALayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF36CC411A768521008A745B /* CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF36CC451A768521008A745B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF36CC461A768521008A745B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF36CC481A768521008A745B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF36CC491A768521008A745B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF36CC4B1A768521008A745B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF36CC4C1A768521008A745B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF36CC4F1A768521008A745B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF36CC511A768521008A745B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF36CC541A768521008A745B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF36CC5A1A768521008A745B /* CALayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF36CC5F1A768521008A745B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF36CC601A768521008A745B /* CALayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerTests.m; sourceTree = "<group>"; };
+		EF36CC6A1A7685CF008A745B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF36CC3E1A768521008A745B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF36CC6B1A7685CF008A745B /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF36CC571A768521008A745B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF36CC381A768521008A745B = {
+			isa = PBXGroup;
+			children = (
+				EF36CC6A1A7685CF008A745B /* QuartzCore.framework */,
+				EF36CC431A768521008A745B /* CALayer */,
+				EF36CC5D1A768521008A745B /* CALayerTests */,
+				EF36CC421A768521008A745B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF36CC421A768521008A745B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF36CC411A768521008A745B /* CALayer.app */,
+				EF36CC5A1A768521008A745B /* CALayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF36CC431A768521008A745B /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				EF36CC481A768521008A745B /* AppDelegate.h */,
+				EF36CC491A768521008A745B /* AppDelegate.m */,
+				EF36CC4B1A768521008A745B /* ViewController.h */,
+				EF36CC4C1A768521008A745B /* ViewController.m */,
+				EF36CC4E1A768521008A745B /* Main.storyboard */,
+				EF36CC511A768521008A745B /* Images.xcassets */,
+				EF36CC531A768521008A745B /* LaunchScreen.xib */,
+				EF36CC441A768521008A745B /* Supporting Files */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		EF36CC441A768521008A745B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF36CC451A768521008A745B /* Info.plist */,
+				EF36CC461A768521008A745B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF36CC5D1A768521008A745B /* CALayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF36CC601A768521008A745B /* CALayerTests.m */,
+				EF36CC5E1A768521008A745B /* Supporting Files */,
+			);
+			path = CALayerTests;
+			sourceTree = "<group>";
+		};
+		EF36CC5E1A768521008A745B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF36CC5F1A768521008A745B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF36CC401A768521008A745B /* CALayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF36CC641A768521008A745B /* Build configuration list for PBXNativeTarget "CALayer" */;
+			buildPhases = (
+				EF36CC3D1A768521008A745B /* Sources */,
+				EF36CC3E1A768521008A745B /* Frameworks */,
+				EF36CC3F1A768521008A745B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CALayer;
+			productName = CALayer;
+			productReference = EF36CC411A768521008A745B /* CALayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF36CC591A768521008A745B /* CALayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF36CC671A768521008A745B /* Build configuration list for PBXNativeTarget "CALayerTests" */;
+			buildPhases = (
+				EF36CC561A768521008A745B /* Sources */,
+				EF36CC571A768521008A745B /* Frameworks */,
+				EF36CC581A768521008A745B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF36CC5C1A768521008A745B /* PBXTargetDependency */,
+			);
+			name = CALayerTests;
+			productName = CALayerTests;
+			productReference = EF36CC5A1A768521008A745B /* CALayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF36CC391A768521008A745B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Frankenstein Yang";
+				TargetAttributes = {
+					EF36CC401A768521008A745B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EF36CC591A768521008A745B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EF36CC401A768521008A745B;
+					};
+				};
+			};
+			buildConfigurationList = EF36CC3C1A768521008A745B /* Build configuration list for PBXProject "CALayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF36CC381A768521008A745B;
+			productRefGroup = EF36CC421A768521008A745B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF36CC401A768521008A745B /* CALayer */,
+				EF36CC591A768521008A745B /* CALayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF36CC3F1A768521008A745B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF36CC501A768521008A745B /* Main.storyboard in Resources */,
+				EF36CC551A768521008A745B /* LaunchScreen.xib in Resources */,
+				EF36CC521A768521008A745B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF36CC581A768521008A745B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF36CC3D1A768521008A745B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF36CC4D1A768521008A745B /* ViewController.m in Sources */,
+				EF36CC4A1A768521008A745B /* AppDelegate.m in Sources */,
+				EF36CC471A768521008A745B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF36CC561A768521008A745B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF36CC611A768521008A745B /* CALayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF36CC5C1A768521008A745B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF36CC401A768521008A745B /* CALayer */;
+			targetProxy = EF36CC5B1A768521008A745B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF36CC4E1A768521008A745B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF36CC4F1A768521008A745B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF36CC531A768521008A745B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF36CC541A768521008A745B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF36CC621A768521008A745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF36CC631A768521008A745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF36CC651A768521008A745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CALayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF36CC661A768521008A745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CALayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF36CC681A768521008A745B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CALayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CALayer.app/CALayer";
+			};
+			name = Debug;
+		};
+		EF36CC691A768521008A745B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CALayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CALayer.app/CALayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF36CC3C1A768521008A745B /* Build configuration list for PBXProject "CALayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF36CC621A768521008A745B /* Debug */,
+				EF36CC631A768521008A745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF36CC641A768521008A745B /* Build configuration list for PBXNativeTarget "CALayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF36CC651A768521008A745B /* Debug */,
+				EF36CC661A768521008A745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF36CC671A768521008A745B /* Build configuration list for PBXNativeTarget "CALayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF36CC681A768521008A745B /* Debug */,
+				EF36CC691A768521008A745B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF36CC391A768521008A745B /* Project object */;
+}

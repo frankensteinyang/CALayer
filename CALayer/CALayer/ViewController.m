@@ -36,9 +36,14 @@
     [imageView.layer setShadowOpacity:1.0f];
     [imageView.layer setShadowColor:[UIColor blackColor].CGColor];
     // 形变属性
-    imageView.layer.transform = CATransform3DScale(imageView.layer.transform, 0.8, 0.8, 1.0);
-    imageView.layer.transform = CATransform3DTranslate(imageView.layer.transform, 0, -100, 0);
-    imageView.layer.transform = CATransform3DRotate(imageView.layer.transform, M_PI_2, 0.0, 0.0, 1.0);
+//    imageView.layer.transform = CATransform3DScale(imageView.layer.transform, 0.8, 0.8, 1.0);
+//    imageView.layer.transform = CATransform3DTranslate(imageView.layer.transform, 0, -100, 0);
+//    imageView.layer.transform = CATransform3DRotate(imageView.layer.transform, M_PI_4, 1.0, 1.0, 1.0);
+    // 使用键值路径修改形变属性
+    // KVC key value coding（键值编码：降低对象之间的耦合度）
+    [imageView.layer setValue:@(0.5) forKeyPath:@"transform.scale"];
+    [imageView.layer setValue:@(-100) forKeyPath:@"transform.translation.y"];
+    [imageView.layer setValue:@(M_PI) forKeyPath:@"transform.rotation"];
     
 }
 

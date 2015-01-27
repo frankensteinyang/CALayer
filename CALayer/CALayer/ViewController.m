@@ -19,7 +19,26 @@
     
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
-    [self layerDemo1];
+//    [self layerDemo1];
+    
+    UIImage *image = [UIImage imageNamed:@"01.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [imageView setFrame:CGRectMake(30, 200, 320, 240)];
+    // 在UIImageView中，图层不止一个，如果要设置圆角属性，需要设置一个“遮罩”属性
+    // 此属性的目的是让所有图层跟随父图层一起变化
+    [imageView.layer setMasksToBounds:YES];
+    [self.view addSubview:imageView];
+    [imageView.layer setCornerRadius:50];
+    [imageView.layer setBorderWidth:5.0f];
+    [imageView.layer setBorderColor:[UIColor whiteColor].CGColor];
+    // 如果使用阴影，遮罩属性不能设置为YES,具体使用需要取舍
+    [imageView.layer setShadowOffset:CGSizeMake(10, 10)];
+    [imageView.layer setShadowOpacity:1.0f];
+    [imageView.layer setShadowColor:[UIColor blackColor].CGColor];
+    // 形变属性
+    imageView.layer.transform = CATransform3DScale(imageView.layer.transform, 0.8, 0.8, 1.0);
+    imageView.layer.transform = CATransform3DTranslate(imageView.layer.transform, 0, -100, 0);
+    imageView.layer.transform = CATransform3DRotate(imageView.layer.transform, M_PI_2, 0.0, 0.0, 1.0);
     
 }
 

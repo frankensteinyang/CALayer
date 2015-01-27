@@ -15,6 +15,7 @@
 		EF36CC551A768521008A745B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF36CC531A768521008A745B /* LaunchScreen.xib */; };
 		EF36CC611A768521008A745B /* CALayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36CC601A768521008A745B /* CALayerTests.m */; };
 		EF36CC6B1A7685CF008A745B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36CC6A1A7685CF008A745B /* QuartzCore.framework */; };
+		EFD7CC031A77E226007723A2 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFD7CC021A77E226007723A2 /* 01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EF36CC5F1A768521008A745B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF36CC601A768521008A745B /* CALayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerTests.m; sourceTree = "<group>"; };
 		EF36CC6A1A7685CF008A745B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EFD7CC021A77E226007723A2 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		EF36CC441A768521008A745B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EFD7CC021A77E226007723A2 /* 01.jpg */,
 				EF36CC451A768521008A745B /* Info.plist */,
 				EF36CC461A768521008A745B /* main.m */,
 			);
@@ -205,6 +208,7 @@
 			files = (
 				EF36CC501A768521008A745B /* Main.storyboard in Resources */,
 				EF36CC551A768521008A745B /* LaunchScreen.xib in Resources */,
+				EFD7CC031A77E226007723A2 /* 01.jpg in Resources */,
 				EF36CC521A768521008A745B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +420,7 @@
 				EF36CC661A768521008A745B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF36CC671A768521008A745B /* Build configuration list for PBXNativeTarget "CALayerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				EF36CC691A768521008A745B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

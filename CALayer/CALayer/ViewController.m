@@ -24,7 +24,35 @@
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
 //    [self layerDemo1];
 //    [self layerDemo2];
+//    [self layerDemo3];
+    [self layerDemo4];
     
+}
+
+#pragma mark - 自定义子图层
+- (void)layerDemo4 {
+
+    // 自定义一个子图层，添加到当前根视图中
+    CALayer *myLayer = [CALayer layer];
+    // 设置图层的属性：大小
+    myLayer.bounds = CGRectMake(0, 0, 200, 200);
+    // 位置
+    myLayer.position = CGPointMake(0, 0);
+    myLayer.backgroundColor = [UIColor redColor].CGColor;
+    // 设置锚点，又称定位点，默认值是（0.5, 0.5）数值范围0～1
+    myLayer.anchorPoint = CGPointMake(0, 0);
+    // 设置图像
+    UIImage *img = [UIImage imageNamed:@"01.jpg"];
+    myLayer.contents = (id)[img CGImage];
+    // 添加到根图层
+    [self.view.layer addSublayer:myLayer];
+    self.myLayer = myLayer;
+    
+}
+
+#pragma mark - CALayer的隐式动画
+- (void)layerDemo3 {
+
     // 自定义图层
     CALayer *myLayer = [CALayer layer];
     myLayer.bounds = CGRectMake(0, 0, 100, 100);
@@ -34,29 +62,40 @@
     self.myLayer = myLayer;
     // 定义颜色数组
     self.colors = @[[UIColor redColor], [UIColor brownColor], [UIColor blueColor]];
+    
 }
-
-#pragma mark - CALayer的隐式动画
 
 #pragma mark 触摸事件
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 
-    UITouch *touch = touches.anyObject;
-    CGPoint location = [touch locationInView:self.view];
-    // 位置
-    self.myLayer.position = location;
-    // 随机生成颜色
-    NSInteger r = arc4random_uniform(self.colors.count);
-    self.myLayer.backgroundColor = [self.colors[r] CGColor];
-    // 透明度
-    CGFloat alpha = arc4random_uniform(5) / 10.0 + 0.6;
-    self.myLayer.opacity = alpha;
-    // 旋转角度
-    CGFloat angle = arc4random_uniform(180) / M_PI * 180;
-    self.myLayer.transform = CATransform3DMakeRotation(angle, 0.0, 0.0, 1.0);
-    // 圆角属性
-    NSInteger r1 = arc4random_uniform(50) + 20;
-    self.myLayer.cornerRadius = r1;
+    /**
+     *  自定义子图层
+     */
+    if (self.myLayer.anchorPoint.x == 0) {
+        self.myLayer.anchorPoint = CGPointMake(1.0, 1.0);
+    } else {
+        self.myLayer.anchorPoint = CGPointMake(0.0, 0.0);
+    }
+    
+    /**
+     *  CALayer的隐式动画
+     */
+//    UITouch *touch = touches.anyObject;
+//    CGPoint location = [touch locationInView:self.view];
+//    // 位置
+//    self.myLayer.position = location;
+//    // 随机生成颜色
+//    NSInteger r = arc4random_uniform(self.colors.count);
+//    self.myLayer.backgroundColor = [self.colors[r] CGColor];
+//    // 透明度
+//    CGFloat alpha = arc4random_uniform(5) / 10.0 + 0.6;
+//    self.myLayer.opacity = alpha;
+//    // 旋转角度
+//    CGFloat angle = arc4random_uniform(180) / M_PI * 180;
+//    self.myLayer.transform = CATransform3DMakeRotation(angle, 0.0, 0.0, 1.0);
+//    // 圆角属性
+//    NSInteger r1 = arc4random_uniform(50) + 20;
+//    self.myLayer.cornerRadius = r1;
     
 }
 

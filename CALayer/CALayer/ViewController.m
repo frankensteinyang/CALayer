@@ -11,6 +11,9 @@
 
 @interface ViewController ()
 
+@property (nonatomic, weak) CALayer *myLayer;
+@property (nonatomic, strong) NSArray *colors;
+
 @end
 
 @implementation ViewController
@@ -20,6 +23,45 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
 //    [self layerDemo1];
+//    [self layerDemo2];
+    
+    // 自定义图层
+    CALayer *myLayer = [CALayer layer];
+    myLayer.bounds = CGRectMake(0, 0, 100, 100);
+    myLayer.position = CGPointMake(100, 100);
+    myLayer.backgroundColor = [UIColor redColor].CGColor;
+    [self.view.layer addSublayer:myLayer];
+    self.myLayer = myLayer;
+    // 定义颜色数组
+    self.colors = @[[UIColor redColor], [UIColor brownColor], [UIColor blueColor]];
+}
+
+#pragma mark - CALayer的隐式动画
+
+#pragma mark 触摸事件
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+
+    UITouch *touch = touches.anyObject;
+    CGPoint location = [touch locationInView:self.view];
+    // 位置
+    self.myLayer.position = location;
+    // 随机生成颜色
+    NSInteger r = arc4random_uniform(self.colors.count);
+    self.myLayer.backgroundColor = [self.colors[r] CGColor];
+    // 透明度
+    CGFloat alpha = arc4random_uniform(5) / 10.0 + 0.6;
+    self.myLayer.opacity = alpha;
+    // 旋转角度
+    CGFloat angle = arc4random_uniform(180) / M_PI * 180;
+    self.myLayer.transform = CATransform3DMakeRotation(angle, 0.0, 0.0, 1.0);
+    // 圆角属性
+    NSInteger r1 = arc4random_uniform(50) + 20;
+    self.myLayer.cornerRadius = r1;
+    
+}
+
+#pragma mark - 形变属性（用KVC修改形变属性）
+- (void)layerDemo2 {
     
     UIImage *image = [UIImage imageNamed:@"01.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -36,9 +78,9 @@
     [imageView.layer setShadowOpacity:1.0f];
     [imageView.layer setShadowColor:[UIColor blackColor].CGColor];
     // 形变属性
-//    imageView.layer.transform = CATransform3DScale(imageView.layer.transform, 0.8, 0.8, 1.0);
-//    imageView.layer.transform = CATransform3DTranslate(imageView.layer.transform, 0, -100, 0);
-//    imageView.layer.transform = CATransform3DRotate(imageView.layer.transform, M_PI_4, 1.0, 1.0, 1.0);
+    //    imageView.layer.transform = CATransform3DScale(imageView.layer.transform, 0.8, 0.8, 1.0);
+    //    imageView.layer.transform = CATransform3DTranslate(imageView.layer.transform, 0, -100, 0);
+    //    imageView.layer.transform = CATransform3DRotate(imageView.layer.transform, M_PI_4, 1.0, 1.0, 1.0);
     // 使用键值路径修改形变属性
     // KVC key value coding（键值编码：降低对象之间的耦合度）
     [imageView.layer setValue:@(0.5) forKeyPath:@"transform.scale"];
